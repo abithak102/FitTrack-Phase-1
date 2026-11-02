@@ -1,0 +1,233 @@
+
+/* FITTRACK DASHBOARD */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f3f8f4;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.dashboard .navbar {
+  min-height: 75px;
+  padding: 0 6%;
+  background: #14532d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard .navbar h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dashboard .logout-btn {
+  background: white;
+  color: #166534;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dashboard .logout-btn:hover {
+  background: #dcfce7;
+  transform: translateY(-2px);
+}
+
+/* DASHBOARD CONTENT */
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 30px;
+}
+
+.dashboard-content > h1 {
+  font-size: 34px;
+  color: #14532d;
+  margin-bottom: 10px;
+}
+
+.dashboard-content .subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+/* PROFILE CARD */
+
+.dashboard .profile-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  border-left: 5px solid #16a34a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.dashboard .profile-card h2 {
+  color: #166534;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.dashboard .profile-card p {
+  color: #4b5563;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+.dashboard .profile-card strong {
+  color: #14532d;
+}
+
+/* SECTION TITLE */
+
+.dashboard .section-title {
+  color: #14532d;
+  font-size: 25px;
+  margin-bottom: 22px;
+}
+
+/* DASHBOARD CARDS */
+
+.dashboard .dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.dashboard .feature-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  padding: 30px;
+  min-height: 150px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dashboard .feature-card:hover {
+  transform: translateY(-6px);
+  border-color: #86efac;
+  box-shadow: 0 12px 25px rgba(22, 101, 52, 0.12);
+}
+
+.dashboard .feature-card span {
+  display: inline-block;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.dashboard .feature-card h3 {
+  color: #166534;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.dashboard .feature-card p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* LOADING */
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #f3f8f4;
+  color: #166534;
+  font-size: 17px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .dashboard .navbar {
+    padding: 15px 5%;
+  }
+
+  .dashboard-content {
+    padding: 30px 18px;
+  }
+
+  .dashboard-content > h1 {
+    font-size: 27px;
+  }
+
+  .dashboard .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard .profile-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dashboard .navbar h2 {
+    font-size: 21px;
+  }
+
+  .dashboard .logout-btn {
+    padding: 9px 14px;
+  }
+}
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification-bell {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  color: #166534;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.notification-bell:hover {
+  background: #dcfce7;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 4px;
+  border-radius: 20px;
+  background: #dc2626;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

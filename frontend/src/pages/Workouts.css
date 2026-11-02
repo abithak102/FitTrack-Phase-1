@@ -1,0 +1,216 @@
+
+/* MAIN WORKOUT PAGE */
+
+.workouts-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f8f5;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.workouts-page > h1 {
+  font-size: 32px;
+  color: #14532d;
+  margin-bottom: 8px;
+}
+
+.workouts-page > p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* SECTION DESIGN */
+
+.workout-form-section,
+.workout-list-section {
+  background: #ffffff;
+  padding: 28px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.workout-form-section h2,
+.workout-list-section h2 {
+  color: #166534;
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+/* FORM */
+
+.workout-form-section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 22px;
+}
+
+.workout-form-section label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.workout-form-section input,
+.workout-form-section select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #111827;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.workout-form-section input:focus,
+.workout-form-section select:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+/* ADD BUTTON */
+
+.workout-form-section button {
+  grid-column: 1 / -1;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #15803d;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.workout-form-section button:hover {
+  background: #166534;
+  transform: translateY(-1px);
+}
+
+/* WORKOUT LIST */
+
+.workout-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.workout-card {
+  padding: 22px;
+  border-radius: 13px;
+  background: #f0fdf4;
+  border: 1px solid #dcfce7;
+  transition: 0.2s ease;
+}
+
+.workout-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(22, 101, 52, 0.10);
+}
+
+.workout-card h3 {
+  color: #166534;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.workout-card p {
+  color: #4b5563;
+  font-size: 14px;
+  margin: 9px 0;
+}
+
+/* SUCCESS AND ERROR */
+
+.workouts-page .success-message {
+  color: #15803d;
+  background: #dcfce7;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.workouts-page .error-message {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .workouts-page {
+    padding: 20px;
+  }
+
+  .workouts-page > h1 {
+    font-size: 26px;
+  }
+
+  .workout-form-section,
+  .workout-list-section {
+    padding: 20px;
+  }
+
+  .workout-form-section form {
+    grid-template-columns: 1fr;
+  }
+
+  .workout-form-section button {
+    grid-column: 1;
+  }
+}
+
+/* WORKOUT ACTION BUTTONS */
+
+.workout-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.workout-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.edit-btn:hover {
+  background: #bfdbfe;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+/* CANCEL EDIT BUTTON */
+
+.workout-form-section .cancel-btn {
+  background: #6b7280;
+}
+
+.workout-form-section .cancel-btn:hover {
+  background: #4b5563;
+}

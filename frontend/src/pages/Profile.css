@@ -1,0 +1,152 @@
+
+.profile-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #1f2937;
+}
+
+.profile-header {
+  margin-bottom: 28px;
+}
+
+.profile-header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #14532d;
+}
+
+.profile-header p {
+  color: #64748b;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #166534, #22c55e);
+  color: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 24px rgba(22, 101, 52, 0.15);
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: white;
+  color: #166534;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 auto 15px;
+}
+
+.profile-card h2 {
+  margin: 8px 0;
+  font-size: 25px;
+}
+
+.profile-card p {
+  margin: 5px 0 12px;
+  opacity: 0.9;
+}
+
+.profile-card span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+}
+
+.profile-form-card {
+  background: white;
+  padding: 28px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.profile-form-card h2 {
+  color: #166534;
+  margin: 0 0 22px;
+  font-size: 21px;
+}
+
+.profile-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-form-card label {
+  font-weight: 600;
+  color: #374151;
+  margin-top: 5px;
+}
+
+.profile-form-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.profile-form-card input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.profile-form-card button {
+  background: #15803d;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+
+.profile-form-card button:hover {
+  background: #166534;
+}
+
+.profile-message {
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.profile-message.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.profile-message.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+@media (max-width: 600px) {
+  .profile-page {
+    padding: 18px;
+  }
+
+  .profile-header h1 {
+    font-size: 25px;
+  }
+
+  .profile-form-card {
+    padding: 20px;
+  }
+}
